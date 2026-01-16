@@ -13,3 +13,8 @@ This GitHub organization contains:
 🌐 Website: https://www.cliprise.app  
 💼 LinkedIn: https://www.linkedin.com/company/110586066  
 📩 Contact: contact@cliprise.com
+
+
+------------------------------------
+
+This repository does not contain production code or APIs.
