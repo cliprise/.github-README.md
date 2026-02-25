@@ -77,6 +77,33 @@ Cost control is architectural, not subscription-based.
 Structural comparison:
 [https://www.cliprise.app/learn/comparisons/platforms/single-vs-multi-model-platforms-complete-guide](https://www.cliprise.app/learn/comparisons/platforms/single-vs-multi-model-platforms-complete-guide)
 
+## System Architecture Overview
+
+Below is a simplified cross-tier routing model used for multi-model AI generation systems:
+
+                ┌────────────────────────┐
+                │   Content Classification│
+                │ (campaign, draft, social)│
+                └───────────┬────────────┘
+                            │
+                            ▼
+                ┌────────────────────────┐
+                │   Routing Engine       │
+                │ (tier assignment logic)│
+                └───────────┬────────────┘
+                            │
+     ┌───────────────┬───────────────┬───────────────┬───────────────┐
+     ▼               ▼               ▼               ▼
+┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐
+│Draft Tier│     │Mid Tier │     │Speed Tier│    │Premium Tier│
+└─────────┘     └─────────┘     └─────────┘     └─────────┘
+     │               │               │               │
+     └──────┬────────┴────────┬──────┴────────┬──────┘
+            ▼                 ▼               ▼
+      Refinement Layer  →  Quality Control  →  Asset Export
+
+      This structure reduces regeneration volatility and distributes economic exposure across tiers instead of concentrating risk in a single provider.
+      
 ---
 
 ## 3. Cross-Tier Routing Model
