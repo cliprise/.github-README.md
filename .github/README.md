@@ -1,4 +1,6 @@
-# Cliprise – Multi-Model AI Image & Video Generation Infrastructure
+> This repository is kept as an older archive. The active Cliprise organization profile is now maintained in cliprise/.github.
+
+# Cliprise - Multi-Model AI Image & Video Generation Infrastructure
 
 Cliprise is a unified multi-model AI generation platform focused on scalable video and image workflows.
 
@@ -41,7 +43,7 @@ Single-tool systems struggle under these constraints.
 
 Multi-model infrastructure requires layered design.
 
-### Layer 1 — Generation Layer
+### Layer 1 - Generation Layer
 
 Handles model-specific tasks:
 
@@ -51,7 +53,7 @@ Handles model-specific tasks:
 * upscaling
 * motion interpolation
 
-### Layer 2 — Control Layer
+### Layer 2 - Control Layer
 
 Manages stability:
 
@@ -65,7 +67,7 @@ Deterministic workflow discipline reduces variance under scale.
 Reference implementation principles:
 [https://www.cliprise.app/learn/guides/best-practices/seeds-consistency](https://www.cliprise.app/learn/guides/best-practices/seeds-consistency)
 
-### Layer 3 — Economic Layer
+### Layer 3 - Economic Layer
 
 Tracks:
 
